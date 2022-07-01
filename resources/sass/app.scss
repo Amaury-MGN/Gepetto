@@ -1,0 +1,1567 @@
+// Fonts
+// @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// !!!!!!!!!!!!!!!!!!!!!!!   NavBar !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+
+.topnav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(64, 61, 61, 0);
+    // opacity: 60%;
+    overflow: hidden;
+    position: absolute;
+    font-family: "Playfair Display";
+    font-style: normal;
+    // font-style: normal;
+}
+
+.router-link-exact-active {
+    background-color: rgba(64, 61, 61, 0.7);
+}
+.topnav .nav-iconeHover.router-link-exact-active {
+    background-color: rgba(83, 127, 105, 0);
+}
+.topnav img {
+    width: 50px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    height: 75px;
+    font-weight: bold;
+    float: left;
+    display: block;
+    // color: rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(64, 61, 61, 0.7);
+    color: #7c6453;
+    // color: #ffffff;
+}
+.nav-account-link a:hover {
+    color: #7c6453;
+}
+.nav-account-link {
+    color: white;
+}
+
+.nav-false-background {
+    background-color: rgba(64, 61, 61, 0.7);
+    height: 75px;
+}
+
+.topnav .icon {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .topnav {
+        display: flex;
+        background-color: #403d3d;
+        opacity: 60%;
+    }
+    .topnav a {
+        color: white;
+        flex-direction: column;
+    }
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    .topnav.responsive {
+        opacity: 85%;
+        // position: relative;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lsh_imgStatic {
+        width: 100%;
+    }
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!   Fin NavBar !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+// !!!!!!!!!!!!!!!!!!!!!!!   footer     !!!!!!!!!!!!!!!!!!!!!!! //
+.footer-background{
+    background-color: rgba(64, 61, 61, 0.7);
+    // min-height:250px;
+    width:100%;
+}
+.footer-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+.footer-flex-first-child, .footer-flex-second-child, .footer-flex-third-child{
+    display:flex;
+    flex:1,
+}
+.footer-flex-first-child, .footer-flex-second-child, .footer-flex-third-child{
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-flex-second-child  a{
+    text-decoration:none;
+    color:white;
+}
+.footer-flex-second-child h3, .footer-flex-third-child h3 {
+    background-color: #403d3d;
+    color:white;
+    margin:20px 10px 0 10px;
+    padding:5px 0;
+    width:300px;
+    font-family: 'Playfair Display', 'serif';
+    text-align: center;
+
+}
+.footer-flex-second-child h5, .footer-flex-third-child h5{
+    font-family: 'Playfair Display', 'serif';
+    text-align: justify;
+    color:white;
+    // font-style: italic;
+}
+.footer-flex-first-child img{
+
+    height:auto;
+    width:100px;
+    padding-bottom:10px;
+}
+.footer-second-child-position{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-sub-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    width: 230px;
+    align-items: center;
+}
+.footer-sub-container li:hover{
+    background-color: #403d3d;
+}
+.router-link-active.nav-iconeHover{
+    background-color: transparent;
+}
+.footer-flex-first-child h1{
+    font-family: 'Playfair Display', 'serif';
+    font-style: italic;
+    color:white;
+    padding:10px;
+    margin:0;
+    font-size: 45px;
+}
+.no-bullet{
+    list-style-type:none;
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!   END footer     !!!!!!!!!!!!!!!!!!!!!!! //
+// !!!!!!!!!!!!!!!!!!!!!!!   confidentiality/mentionLegal !!!!!!!!!!!!!!!!!!!!!!! //
+
+.confidentiality{
+// background-color:rgba(64, 61, 61, 0.377);
+text-align: center;
+padding:15px 10vw;
+}
+.confidentiality h1{
+    margin:0 ;
+}
+.confidentiality p, .confidentiality h2, .confidentiality h3, .confidentiality h4{
+    text-align: justify;
+}
+// !!!!!!!!!!!!!!!!!!!!!!!   END confidentiality/mentionlegal !!!!!!!!!!!!!!!!!!!!!!! //
+// !!!!!!!!!!!!!!!!!!!!!!!   Home Css !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+
+.home-background-image {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("/storage/images/wallpaper-outils.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.title-font {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    padding: 0 20vh;
+}
+.title {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 7vw;
+    color: white;
+}
+.subtitle {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 3vw;
+    color: white;
+}
+.home-contents-display1 {
+    display: flex;
+    height: 65vh;
+    background-color: rgba(64, 61, 61, 0.1);
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.home-contents-display2 {
+    display: flex;
+    height: 65vh;
+    background-color: rgb(124, 100, 83, 0.8);
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.home-posts1 {
+    max-height: 60vh;
+    width: 30%;
+    background-color: rgb(124, 100, 83, 0.8);
+    color: white;
+    box-shadow: 15px 10px 5.9px rgba(64, 61, 61, 0.6);
+    border-radius: 20px;
+    padding: 5vh;
+}
+
+.home-posts2 {
+    max-height: 60vh;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.722);
+    box-shadow: 3px 3px 1.5em rgba(64, 61, 61, 0.6);
+    border-radius: 20px;
+    padding: 5vh;
+}
+
+.home-imgStatic1 {
+    max-height: 60vh;
+    width: 40vw;
+    border-radius: 10px;
+    box-shadow: 15px 10px 5.9px rgba(64, 61, 61, 0.6);
+}
+.home-imgStatic2 {
+    max-height: 60vh;
+    width: 40vw;
+    border-radius: 10px;
+    box-shadow: 15px 10px 5.9px rgba(64, 61, 61, 0.6);
+}
+@media screen and (max-width: 767px) {
+    .home-posts-img-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-contents-display1,
+    .home-contents-display2 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100vh;
+    }
+    .home-posts1,
+    .home-posts2 {
+        width: 60vw;
+        max-height: 100vh;
+        padding: 20px;
+        border-radius: 0;
+        // color: red;
+    }
+    .home-imgStatic1,
+    .home-imgStatic2 {
+        width: 100vw;
+        max-height: 70vh;
+        height: auto;
+        object-fit: contain;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .title-font {
+        padding: 0;
+        text-align: center;
+    }
+    .title {
+        font-size: 70px;
+    }
+    .subtitle {
+        font-size: 30px;
+    }
+    .home-posts-img-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-contents-display1,
+    .home-contents-display2 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100vh;
+    }
+    .home-posts1,
+    .home-posts2 {
+        width: 80vw;
+        max-height: 100vh;
+        padding: 20px;
+        border-radius: 0;
+        // color: red;
+    }
+    .home-imgStatic1,
+    .home-imgStatic2 {
+        width: 100vw;
+        max-height: 70vh;
+        height: auto;
+        object-fit: contain;
+        border-radius: 0;
+    }
+}
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  END HOME Css !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Static Workplace + Skills !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.title-static,
+.main-title-auth {
+    height: 120px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(124, 100, 83, 0.8);
+    color: white;
+    font-family: "Playfair Display", "serif";
+}
+.container-static {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    // background-color: #403d3d;
+}
+
+.posts-images-static,
+.posts-images-static2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.posts-images-static2 {
+    background-color: rgb(124, 100, 83, 0.8);
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! END Static Workplace + Skills !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! AUTH !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.background-auth {
+    height: 95vh;
+    background-color: rgba(64, 61, 61, 0.1);
+}
+.main-title-auth h1 {
+    color: black;
+    font-size: 6vh !important;
+    font-weight: bold;
+}
+.container-auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: rgba(64, 61, 61, 0.6);
+}
+.title-auth {
+    height: 60px;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(64, 61, 61, 0.7);
+    color: white;
+    font-family: "Playfair Display", "serif";
+}
+
+.form-auth{
+    background-color: rgb(124, 100, 83, 0.8);
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.form-auth label {
+    font-size: 4vh;
+    font-family: "Playfair Display", "serif";
+}
+.form-auth p {
+    font-size: 2vh;
+
+    color: rgb(100, 1, 1);
+}
+.center-informations {
+    display: flex;
+    justify-content: space-around;
+}
+.cookies-informations {
+    font-size: 1vh !important;
+    color: white !important;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+}
+.form-auth input{
+    font-size: 2vh;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-auth input[type="submit"] {
+    width: 50%;
+    background-color: #c5c5c5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-auth input[type="submit"]:hover {
+    background-color: rgba(64, 61, 61, 0.7);
+}
+.link-auth {
+    color: white;
+}
+// !!!!!!!!!!!!!!!!!!!!!!!        AUTH Css       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+// !!!!!!!!!!!!!!!!!!!!!!!   UserDashboard Css   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+.user-background-image {
+    // position: fixed;
+    // background-image: url("/storage/images/travailler-bois.jpg");
+    background-size: cover;
+    background-color: #e1e0e0;
+    padding-bottom:5px;
+}
+.background-color-user {
+    background-color: white;
+}
+.container-display-user {
+    // min-height: 95vh;
+    height: auto;
+    margin: 2% 8%;
+    display: flex;
+    flex-wrap: wrap;
+    // background-color:#403d3d;
+}
+
+.display-container {
+    display: flex;
+}
+.flex-information-user {
+    border-bottom: 3px solid rgba(64, 61, 61);
+    border-right: 3px solid rgba(64, 61, 61);
+}
+@media screen and (max-width: 1000px) {
+    .container-display-user {
+        margin: 0;
+    }
+    .flex-information-user {
+        min-width: 320px;
+    }
+}
+@media screen and (max-width: 795px) {
+    .container-display-user {
+        margin: 0;
+    }
+    .flex-information-user {
+        min-width: 320px;
+        flex-wrap: wrap;
+    }
+
+}
+// @media screen and (max-width: ) {
+// }
+
+// 421 à
+.menu-dashboard-user {
+    min-height: 81vh;
+    flex: 1;
+    color: white;
+    background-color: rgba(64, 61, 61);
+    text-align: center;
+    // display: grid;
+    align-content: space-around;
+}
+.menu-dashboard-user a :hover {
+    background-color: rgb(124, 100, 83);
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+.menu-category-size-user-first-menu {
+    margin-top: 100px;
+}
+.menu-category-size-user,
+.menu-category-size-user-first-menu {
+    height: 110px;
+}
+.menu-category-size-user h5,
+.menu-category-size-user-first-menu h5 {
+    padding: 20px 0;
+}
+@media screen and (max-width: 795px){
+    .menu-dashboard-user {
+        min-height:60px !important;
+        flex: 0 0 100% !important;
+    }
+    .menu-category-size-user-first-menu, .menu-category-size-user{
+        height:80px;
+
+    }
+    .menu-category-size-user-first-menu{
+        margin-top:20px;
+    }
+    .container-display-user{
+        align-items: center;
+    }
+}
+.display-dashboard-user {
+    opacity: 0.97;
+    background-position: 75% 70%;
+    flex: 5;
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!   END UserDashboard Css !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+// !!!!!!!!!!!!!!!!!!!!!!!   UserComponent Css !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+.infos-title-user {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(64, 61, 61);
+    color: white;
+}
+.infos-title-user h2 {
+    font-size: 2.1em !important;
+    font-weight: bold;
+}
+.table-display-user {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.form-confirmation-user-data {
+    margin: 10px;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infos-users-user {
+    text-align: center;
+    color: black;
+}
+.infos-users-user h5 {
+    padding: 10px 0 20px 0;
+}
+.infos-users-user a {
+    display: flex;
+    justify-content: flex-end;
+}
+.infos-users-user a h5:hover {
+    color: white;
+    background-color: rgba(64, 61, 61);
+}
+.button-informations-user {
+    background-color: rgb(124, 100, 83);
+    color: white;
+    padding: 20px !important;
+}
+.validate-informations-user {
+    background-color: rgba(64, 61, 61);
+    color: white;
+    padding: 20px !important;
+}
+.validate-informations-user:hover {
+    background-color: rgb(124, 100, 83);
+}
+.infos-users-flex-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infos-users-categories-user:first-child {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(124, 100, 83);
+    color: white;
+    border-bottom: 2px solid rgba(64, 61, 61);
+    align-items: center;
+}
+.infos-users-data-user {
+    display: flex;
+    line-height: 1.628;
+    margin: 0%;
+    min-width: 300px;
+    color: white;
+    background-color: rgba(64, 61, 61);
+    border-bottom: 2px solid rgb(124, 100, 83);
+}
+.infos-users-data-user input {
+    border: none;
+}
+.infos-users-categories-user h5 {
+    margin: 0;
+    padding: 20px;
+}
+.infos-users-data-user h5 {
+    margin: 0;
+    padding: 20px;
+}
+.infos-users-data-user input {
+    width: 100%;
+    margin: 0%;
+    padding: 18px;
+}
+.infos-users-data-user input::placeholder {
+    color: black;
+}
+.form-display-user {
+    display: flex;
+}
+@media screen and (max-width:795px) {
+    .infos-users-data-user{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+// !!!!!!!!!!!!!!!!!!!!!!!   Fin UserComponent Css !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+// !!!!!!!!!!!!!!!!!!!!!!!      USER cards Css     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    min-height: 80vh;
+}
+.card-border {
+    background-color: rgba(161, 157, 157, 0.6);
+    width: 310px;
+    height: 330px;
+    margin: 10px;
+    padding: 20px;
+    color: black;
+    border: 17px solid #7c6453;
+    border-radius: 7%;
+    box-shadow:10px 10px 7px rgb(64 61 61 / 60%);
+}
+.cards-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+// .cards-center {
+//     color: white;
+// }
+
+// !!!!!!!!!!!!!!!!!!!!!!!  Modal CSS template Css !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(43, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal {
+    position: fixed;
+    width: 80%;
+    height: 75%;
+    margin: 7% 25% 25% 10%;
+    background: #ffffff;
+    box-shadow: 2px 2px 20px 1px;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+    .modal {
+        height: 90%;
+    }
+    .modal-header{
+        text-align:center;
+    }
+    .modal-header h3{
+        font-size:16px;
+    }
+}
+.modal-header {
+    /* position: relative; */
+    background-color: rgba(64, 61, 61, 0.7);
+    font-family: "Playfair Display", "serif";
+    display: flex;
+    justify-content: center !important;
+    float: right;
+    border-bottom: 1px solid #eeeeee;
+    color: white;
+    justify-content: space-between;
+}
+
+.modal-footer {
+    background-color: rgba(64, 61, 61, 0.7);
+    font-family: "Playfair Display", "serif";
+    color: white;
+    border-top: 1px solid #eeeeee;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.modal-body {
+    background-color: rgba(64, 61, 61, 0.3);
+    position: relative;
+    padding: 20px 10px;
+}
+
+.btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+}
+
+.btn-fermer,
+.btn-fermer-userDB {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    color: white;
+    background: rgba(64, 61, 61, 0.7);
+}
+.btn-fermer p {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.btn-fermer:hover {
+    background: rgb(124, 100, 83);
+}
+// !!!!!!!!!!!!!!!!!!!!!!!  END Modal CSS template Css !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+// !!!!!!!!!!!!!!!!!!!!!!!  Modal "request your quote/estimate" CSS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+.modal-display-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.form-request-estimate input {
+    background-color: #7c6453;
+    font-size: 2vh;
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: default;
+}
+.form-request-estimate textarea {
+    background-color: #7c6453;
+    border-radius: 10px;
+    font-size: 2vh;
+    color: black;
+    width: 600px;
+    min-height: 150px;
+    // caret-color: red;
+    cursor: default;
+}
+.form-request-estimate input::placeholder,
+.form-request-estimate textarea::placeholder {
+    color: black;
+}
+.modal-title-request-estimate {
+    background-color: rgba(64, 61, 61);
+    margin-top: 20px;
+    padding: 25px;
+    max-width: 280px;
+    max-height: 80px;
+    border-radius: 10px;;
+    text-align: center;
+    justify-content: center;
+}
+.modal-input-number {
+    max-width: 400px;
+    width: 50%;
+    width: min-content !important;
+}
+.modal-button-estimates {
+    background: rgba(64, 61, 61, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 150px;
+    height: 45px;
+    color: white;
+
+    margin-bottom: 20px;
+}
+.modal-button-estimates:hover {
+    background: rgb(124, 100, 83);
+}
+.form-request-estimate p {
+    color: rgb(107, 0, 0);
+}
+.success h5 {
+    color: #000000;
+    font-size: 30px;
+    background-color:#403d3d;
+    text-align: center;
+}
+@media screen and (max-width:768px) {
+    .modal-display-center input[type="text"]{
+        width:250px;
+    }
+    .modal-display-center textarea{
+        width:250px;
+    }
+}
+.success-send-ticket{
+    text-align: center;
+}
+// !!!!!!!!!!!!!!!!!!!!!!!  END Modal "request your quote/estimate" CSS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+// !!!!!!!!!!!!!!!!!!!!!!!  Show Estimates to ther User CSS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+.modal-display-table {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+}
+.modal-estimates-style {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+.modal-estimates-style h5 {
+    width: 100%;
+    background-color: #403d3d;
+    padding: 15px;
+    margin: 5px;
+    word-break: break-word;
+}
+.modal-estimates-column {
+    flex-direction: column !important;
+}
+.modal-estimates-style h4 {
+    background-color: #403d3d;
+    width: 100%;
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+}
+.modal-estimates-style p {
+    background-color: #7c6453;
+    padding: 14.33px;
+    margin: 5px;
+}
+.btn-fermer-userDB {
+    width: 300px;
+    margin: 25px 0 25px 0;
+}
+.message-modal-userDB,
+.message-modal-userDB-center {
+    background-color: #403d3d;
+    font-size: 17px;
+    max-width: 50vw;
+    padding: 50px;
+}
+.message-modal-userDB-center {
+    text-align: center;
+}
+.btn-reponse-userDB {
+    background: rgba(64, 61, 61, 0.7);
+    width: 150px;
+    height: 50px;
+    color: white;
+    // margin: 25px 0 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-reponse-userDB :hover {
+    background: #7c6453;
+}
+.button-card-userDB:hover {
+    background: #7c6453;
+}
+@media screen and(max-width:795px) {
+    .modal-display-table{
+        justify-content: center;
+    }
+    .modal-display-table h5{
+        text-align: center;
+    }
+    .btn-fermer-userDB{
+        width:200px;
+    }
+    .message-modal-userDB{
+        padding: 10px;
+        max-width: 250px;
+    }
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!  ENDShow Estimates to ther User CSS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+// !!!!!!!!!!!!!!!!!!!!!!!     Show Orders to ther User CS     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+
+.modal-orders-style {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.modal-orders-style h5 {
+    display: flex;
+    justify-content: center;
+    background-color: #403d3d;
+    width: 250px;
+    padding: 15px;
+    margin: 5px;
+}
+
+.modal-orders-style p {
+    background-color: #7c6453;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    padding: 14.33px;
+    margin: 5px;
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!                             !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+// !!!!!!!!!!!!!!!!!!!!!!!                             !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+// !!!!!!!!!!!!!!!!!!!!!!!                             !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+// !!!!!!!!!!!!!!!!!!!!!!!        ADMIN SECTION        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+// !!!!!!!!!!!!!!!!!!!!!!!                             !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+// !!!!!!!!!!!!!!!!!!!!!!!                             !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+// !!!!!!!!!!!!!!!!!!!!!!!                             !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+// Table row shading color
+
+.table-color-shading-1{
+    background-color:rgba(64, 61, 61, 0.6);
+}
+.table-color-shading-1 button{
+    background-color:rgba(64, 61, 61, 0.6);
+    min-width: 195px;
+    min-height: 75px;
+    color:white;
+}
+.table-color-shading-1 button:hover{
+    background-color:#7c6453;
+}
+.table-color-shading-2{
+    background-color:#7c6453;
+    color:white;
+}
+.table-color-shading-2 button{
+    background-color:#7c6453;
+    min-width: 195px;
+    min-height: 75px;
+    color:white;
+}
+.table-color-shading-2 button:hover{
+    background-color:rgba(64, 61, 61);
+}
+.table-size{
+width:100%;
+}
+.table-color{
+    background-color: rgba(64, 61, 61);
+    color:white;
+    text-align: center;
+
+}
+.table-color tr{
+    height:50px;
+    width:100%;
+}
+.table-color-tbody{
+    text-align: center;
+
+}
+.page-link{
+    font-size:30px;
+    height:50px;
+    width:50px;
+    background-color: #403d3d;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-link :hover{
+    // background-color: #7c6453;
+    color:black !important;
+}
+.page-item.active .page-link{
+    background-color: #7c6453 !important;
+    border-color:white;
+}
+.page-item :hover{
+    color:black;
+}
+.searchbar-ad {
+    background-color: #7c6453;
+    // padding: 20px;
+    // text-align: center;
+    // justify-content: center;
+}
+.searchbar-results{
+    background-color: #403d3d;
+    color:white;
+    height:40px;
+    font-size:15px;
+}
+.searchbar-title-results{
+    display:flex;
+    justify-content: center;
+}
+.searchbar-title-results h5{
+    margin:0;
+    padding:20px;
+    width:300px;
+    background-color: #7c6453;
+    // display:flex;
+    justify-content: center;
+    text-align: center;
+}
+.searchbar-footer{
+background-color:white;
+height:40px;
+}
+.add-new-members button{
+    background-color: #7c6453;
+    height:40px;
+    float:right;
+}
+.add-new-members button:hover{
+    background-color: rgba(64, 61, 61, 0.6);
+}
+
+.button-modal-pdf{
+    display: flex;
+    justify-content: center;
+    background-color: #7c6453;
+    color:white;
+    width: 250px;
+    padding: 12px;
+    margin: 5px;
+    border: 2px solid rgba(64, 61, 61);
+}
+.button-modal-pdf:hover{
+    background-color: rgba(64, 61, 61);
+}
+.modal-display-table-AD {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+}
+.modal-display-table-AD-child{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.modal-display-table-AD-ask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-display-table-AD-ask h5{
+    margin-top: 50px;
+    margin-bottom:10px;
+    width:500px;
+}
+.modal-display-table-AD-ask .modal-display-content{
+    width:700px;
+}
+.button-modal-answer button{
+    margin-top:50px;
+}
+.show-response-button{
+    padding: 0 !important;
+    background-color: #403d3d00 !important;
+}
+.modal-answer-admin-titles{
+    background-color: rgba(64, 61, 61);
+    width: 800px;
+    text-align: center;
+    padding: 25px;
+}
+.modal-answer-admin-contents{
+    width:700px !important;
+    margin-bottom:35px;
+}
+.modal-answer-admin-inputs{
+    width:150px !important;
+    margin-bottom:35px !important;
+}
+
+
+// !!!!!!!!!!!!!!!!!!!!!!!     Edit static website  CS     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+.edit-images-positions-titles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.edit-images-titles, .edit-posts-titles{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height:60px;
+    margin-top:15px;
+    color:white;
+}
+.edit-images-titles{
+    background-color:#403d3d;
+    border:4px solid #7c6453;
+
+}
+.edit-posts-titles{
+    background-color:#7c6453;
+    border:4px solid #403d3d;
+}
+.edit-images-titles button{
+    background-color:#7c6453;
+    color:white;
+}
+.edit-posts-titles button{
+    background-color:#403d3d;
+    color:white;
+}
+.admin-postion-new-image, .admin-upload-new-image{
+    display: flex;
+    flex-direction: column;
+}
+.admin-postion-right-new-image{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: center;
+    margin: 40px;
+}
+.admin-postion-right-new-image button{
+    height:50px;
+    margin-top:15px;
+    background-color:#403d3d;
+    color:white;
+}
+.admin-postion-right-new-image button:hover{
+    background-color:#7c6453;
+
+}
+.admin-upload-new-image, .admin-success-upload-new-image {
+    display: flex;
+    align-items: center;
+}
+.admin-upload-new-image label{
+    font-size: 4vh;
+    font-family: "Playfair Display", "serif";
+    background-color: #403d3d;
+    color:white;
+    text-align: center;
+    width:600px;
+    padding:5px;
+    margin:20px;
+    // background-color:#7c6453;
+}
+.admin-upload-new-image input{
+    width: 400px;
+    margin: 0;
+    padding: 18px;
+    font-size: 16px;
+    border: 4px solid #7c6453;
+}
+.admin-upload-new-image input[type='file']:hover{
+    background-color: #7c6453;
+}
+.admin-success-upload-new-image p {
+    text-align: center;
+    font-size:20px;
+    padding:20px;
+    background-color: #403d3d;
+    color:white;
+
+}
+.save-new-image{
+    display: flex;
+    justify-content: center;
+}
+.save-new-image button{
+    background-color: #403d3d;
+    color:white;
+    display: flex;
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.save-new-image button:hover{
+    background-color: #7c6453;
+}
+.lsh_allImageCards {
+    width: 150px;
+    height:130px;
+}
+.show-all-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    text-align: center;
+    word-break: break-all;
+}
+.show-all-images p{
+    height: 75px;
+    width:220px;
+    padding:0 10px;
+    align-items: center;
+    display: flex;
+    word-break: break-all;
+}
+.show-all-images button{
+    height: 40px;
+    width: 150px;
+    margin: 25px 0;
+    background-color: #7c6453;
+    color: white;
+}
+.show-all-images button:hover{
+    background-color: #403d3d;
+}
+.all-images-cards{
+    display:flex;
+}
+.all-position-images-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.menu-actual-website-images{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.menu-actual-website-images-position{
+    display: flex;
+    justify-content: center;
+}
+.menu-actual-website-images-position button, .save-URL-images button{
+    height: 50px;
+    width: 200px;
+    margin: 25px 0;
+    background-color: #403d3d;
+    color: white;
+}
+.menu-actual-website-images-position button:hover,
+.save-URL-images button:hover{
+    background-color: #7c6453;
+}
+.save-URL-images{
+    display: flex;
+    justify-content: center;
+}
+
+.posts-subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    height:50px;
+    background-color: #7c6453;
+}
+.edit-post-container{
+    display: flex;
+    flex-direction: column;
+}
+.edit-post-position{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.edit-post-position h5{
+    background-color: #403d3d;
+    width:250px;
+    color:white;
+    margin:15px;
+    padding:15px;
+    text-align: center;
+}
+.edit-post-position p, .edit-post-position textarea{
+    width:600px;
+    background-color:rgba(64, 61, 61, 0.5);
+    padding:25px;
+    border-radius: 30px;
+}
+.edit-post-position button {
+    padding:10px;
+    width:150px;
+    background-color: #7c6453;
+    color: white;
+    margin-bottom:10px;
+}
+.edit-post-position button:hover{
+    background-color: #403d3d;
+}
+.edit-post-position textarea{
+    margin-bottom:20px;
+    background-color: rgba(124, 100, 83, 0.8);
+}
+.edit-post-position textarea::placeholder{
+    color:white;
+}
+.save-new-posts button{
+    background-color: #403d3d;
+    color:white;
+    margin-left:15px;
+    padding:5px;
+}
+.success-posts{
+    background-color: #403d3d;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:60px;
+}
+// !!!!!!!!!!!!!!!!!!!!!!!     Show Contact User CSS      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+.contact-verif-ticket-position{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contact-verif-ticket{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    align-items: center;
+    justify-content: center;
+}
+.contact-verif-ticket select{
+    background-color: #7c6453;
+    width:280px;
+    padding:10px;
+    margin:10px;
+}
+.contact-verif-ticket button, .contact-ticket-form button{
+    background-color: #403d3d;
+    color:white;
+    width:220px;
+    padding:5px;
+    margin:15px;
+}
+.contact-verif-ticket button:hover, .contact-ticket-form button:hover{
+    background-color: #7c6453;
+}
+.alert-category-choice{
+    text-align:center;
+    color:rgb(87, 2, 2);
+
+}
+.contact-ticket-form-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-ticket-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-ticket-form textarea{
+    width:600px;
+    height:150px;
+    background-color: #7c6453;
+    color: white;
+}
+@media screen and (max-width:768px){
+    .contact-ticket-form textarea{
+        width:260px;
+    }
+}
+.contact-ticket-form textarea::placeholder{
+    color:white;
+    font-size:15px;
+}
+.contact-ticket-form button{
+    display: flex;
+    justify-content: center;
+
+}
+.align-item-center{
+    text-align: center;
+}
+// !!!!!!!!!!!!!!!!!!!!!!!     Show Payment Stripe CS     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
+
+.payment-informations {
+    background-color: #403d3d;
+    color: white;
+    padding: 25px;
+}
+.payment-stripe form {
+    background-color: #403d3d;
+    // background-color: #7c6453;
+    width: 30vw;
+    min-width: 500px;
+    align-self: center;
+    box-shadow: 0px 0px 0px 0.5px rgba(50, 50, 93, 0.1),
+        0px 2px 5px 0px rgba(50, 50, 93, 0.1),
+        0px 1px 1.5px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 7px;
+    padding: 40px;
+}
+
+.payment-stripe input {
+    border-radius: 6px;
+    margin-bottom: 6px;
+    padding: 12px;
+    border: 1px solid rgba(50, 50, 93, 0.1);
+    height: 44px;
+    font-size: 16px;
+    width: 100%;
+    background: white;
+}
+
+.result-message {
+    line-height: 22px;
+    font-size: 16px;
+}
+
+.result-message a {
+    color: rgb(89, 111, 214);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#card-error {
+    color: rgb(105, 115, 134);
+    text-align: left;
+    font-size: 13px;
+    line-height: 17px;
+    margin-top: 12px;
+}
+
+#card-element {
+    border-radius: 4px 4px 0 0;
+    padding: 12px;
+    border: 1px solid rgba(50, 50, 93, 0.1);
+    height: 44px;
+    width: 100%;
+    background: white;
+}
+
+#payment-request-button {
+    margin-bottom: 32px;
+}
+
+/* Buttons and links */
+.payment-stripe button {
+    background: #7c6453;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    border-radius: 0 0 4px 4px;
+    border: 0;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    transition: all 0.2s ease;
+    box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+    width: 100%;
+}
+
+.payment-stripe button:hover {
+    filter: contrast(115%);
+    background-color: rgba(64, 61, 61, 0.7);
+}
+.payment-stripe button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+@media screen and(max-width:795px) {
+    .payment-stripe form {
+        min-width: 300px;
+    }
+}
